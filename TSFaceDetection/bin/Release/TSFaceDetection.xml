@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TSFaceDetection</name>
+    </assembly>
+    <members>
+        <member name="T:TSFaceDetection.TSFaceDetection">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TSFaceDetection.TSFaceDetection.FaceDetect(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Face detection using Cascade classifier
+            </summary>
+            <param name="FullFileName"> Full input file name</param>
+            <param name="JsonFileName"> Output JSon file name (saving faces information)</param>
+            <param name="FaceFileName_Cascade"> Cascade config file (.xml)</param>
+            <param name="DetectInterval"> Detect interval</param>
+        </member>
+        <member name="M:TSFaceDetection.TSFaceDetection.FaceDetect(System.String,System.String,System.String,System.String,System.String[],System.Int32[],System.Int32)">
+            <summary>
+            Face detection using YOLO classifier
+            </summary>
+            <param name="FullFileName"> Full input file name</param>
+            <param name="JsonFileName"> Output JSon file name (saving faces information)</param>
+            <param name="ConfigFile_YOLO"> YOLO config file (.cfg)</param>
+            <param name="Weights_YOLO"> YOLO weight file (.weights)</param>
+            <param name="Labels"> Label classes</param>
+            <param name="DetectClass"> Classes wanted to be detected</param>
+            <param name="DetectInterval"> Detect interval</param>
+        </member>
+        <member name="M:TSFaceDetection.TSFaceDetection.FaceReduction(System.String,System.String,System.String)">
+            <summary>
+            Face reduction using faces information in JSon file
+            </summary>
+            <param name="FullFileName"> Full input file name</param>
+            <param name="JSonFileName"> Input JSon file name</param>
+            <param name="OutFileName"> Full output file name</param>
+        </member>
+    </members>
+</doc>
